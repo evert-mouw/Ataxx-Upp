@@ -1,0 +1,11 @@
+uses
+	CtrlLib,
+	RichText;
+
+file
+	C:\MyApps\ataxx\bordselectie.lay,
+	main.cpp;
+
+mainconfig
+	"" = "GUI";
+

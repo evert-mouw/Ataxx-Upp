@@ -1,0 +1,33 @@
+
+some drawing problems in X11 [message #6998]
+
+http://www.arilect.com/upp/forum/index.php?t=msg&goto=6998&#msg_6998
+
+evert
+Wed, 06 December 2006
+
+
+Hi,
+
+I have created a small ataxx (virus) game in U++ as part of my programming course at the university. The code is ugly, I'm a beginner, the comments are in Dutch, but it works, at least in Win32. In X11 I have to disable a few things like auto-resizing the window.
+
+Some code snippets that causes problems:
+
+w.DrawEllipse(startx, starty, virusgrootte/2, virusgrootte/2, Yellow());
+
+(it seems like DrawEllipse does not like the divisions - Win32 does not complain though)
+
+centrumpunt = GetWorkArea().CenterPoint();
+centreerx = centrumpunt.x-(int)(.5*raambreedte);
+centreery = centrumpunt.y-(int)(.5*raamhoogte);
+SetRect(centreerx, centreery, raambreedte, raamhoogte);
+
+(something goes wrong with GetWorkArea().CenterPoint(); or with SetRect, not sure which is causing the problem)
+
+I'm working with upp_0.612.1-1_i386.deb
+
+(in windows, i work with the 605 release, works splendid)
+
+Just to let you know there errors ocurred. I've to show my work tomorrow so I will not care much myself about these problems - I just show the win32 version and my teacher will be happy.
+
+Thanks for U++ !!
